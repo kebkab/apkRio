@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Medias Colégio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action = "servlet.controle" method="post">
+            Digite a Matricula:
+            <input type="text" name="txtMatricula"><br>
+            <input type="radio" name="rdbTipo" value="1ano">1º Ano<br>
+            <input type="radio" name="rdbTipo" value="2ano">2º Ano<br>
+            <input type="radio" name="rdbTipo" value="2ano">3º Ano<br><br>
+            Digite o nome do usuário:
+            <input type="text" name="txtUser"><br><br>
+            Digite as notas do Aluno:<br>
+            Primeira Nota: <input type="text" name="txtNota1"><br>
+            Segunda Nota: <input type="text" name="txtNota2"><br>
+            Terceira Nota: <input type="text" name="txtNota3"><br>
+            Quarta Nota: <input type="text" name="txtNota4"><br>
+            
+            Digite o valor da Prova Final:
+            <input type="text" name="txtProva"><br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Cancelar">
+                       
+        </form>
+    </body>
+</html>
