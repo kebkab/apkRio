@@ -59,7 +59,19 @@ public class ServletAluno extends HttpServlet {
             out.println("<b>Prova 3:</b>" + aluno.getTeste3() + "<br>");
             out.println("<b>Prova 4:</b>" + aluno.getTeste4() + "<br>");
             out.println("<b>Média:</b>" + aluno.getMedia() + "<br>");
-            out.println("<b>Prova Final:</b>" + aluno.getProva() + "<br>");
+            if (aluno.getMedia()<6){
+                out.println("<b> Status:</b>" + aluno.FailMsg() + "<br>");
+                out.println("<b>Prova Final:</b>" + aluno.getProva() + "<br>");
+                if (aluno.getProva() > 5){
+                    aluno.SuccessMsg();
+                }
+                else{
+                    aluno.FailMsg();
+                }
+            }
+            else{
+                aluno.SuccessMsg();
+            }
             out.println("</body>");
             out.println("</html>");
         

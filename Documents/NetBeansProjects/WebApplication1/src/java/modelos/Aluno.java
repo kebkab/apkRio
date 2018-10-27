@@ -81,14 +81,19 @@ public abstract class Aluno extends Pessoa{
         this.provaf = provaf;
     }
     
-    public void SuccessMsg(){
+    public String SuccessMsg(){
      System.out.println("Aprovado");
+     return "Aprovado";
     }
     
-    public void FailMsg(){
+    public String FailMsg(){
      System.out.println("Reprovado");
+     return "Reprovado";
     }
         
-    public abstract double getMedia();    
-        
+    public double getMedia(){    
+        return (getSumtestes()/4);
+    
+}
+
 }
